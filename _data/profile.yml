@@ -1,0 +1,97 @@
+primary_name: "Chen"
+secondary_name: "Yanyang"
+navbar_name: "Chen Yanyang"
+
+positions:
+- logo: /assets/images/badges/Guangzhou_University_logo.png  # 请替换为实际广州大学校徽图片路径（可自行添加）
+  name: Undergraduate in Applied Mathematics, Guangzhou University
+# - name: Position 2 without logo
+
+email: "3241510003@e.gzhu.edu.cn"  # 根据你之前提供的邮箱调整（请确认最新邮箱）
+cv_link:
+github: zdawer
+twitter: zdawer
+wechat_qrcode: /assets/images/etc/wechat.jpg
+wechat_prompt: >-
+  Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past), and your <strong>reason</strong> for adding me on WeChat. Thanks!
+orcid: 0009-0002-0667-3153
+
+short_bio_text_justify: true
+short_bio: >-
+  <p>
+   I am an interdisciplinary undergraduate researcher in Applied Mathematics at Guangzhou University, focusing on epigenetic mechanisms in plant metabolism, valorization of agricultural by-products, and adaptive machine learning under concept drift and extreme imbalance. My work integrates mathematical modeling, multi-omics analysis, and AI to advance sustainable bio-based materials and high-value utilization of medicinal plants
+   (e.g., <i>Chrysanthemum morifolium</i> 'Fubaiju').
+    <img src="assets/images/photos/research_interest.png" alt="Research Interests" 
+         style="float: left; width: 350px; margin-right: 10px; border-radius: 8px;">
+  </p>
+  <p>
+    I am currently a <strong>second-year undergraduate</strong> in Applied Mathematics at 
+    <a href="https://www.gzhu.edu.cn/" target="_blank">Guangzhou University</a>.
+    Leveraging my strong foundation in mathematics and algorithm design, I collaborate closely with faculty in Life Sciences and related fields on interdisciplinary projects involving phenylpropanoid metabolism, DNA methylation dynamics, and the development of biodegradable materials. My background also includes a National Second Prize in the Chinese National Biology Olympiad  during high school, which laid the foundation for my cross-disciplinary research.
+  </p>
+  <p>
+    Key highlights include:
+    <ul>
+      <li>Student first / leading author of a SCI Q1 TOP (IF＝6.2) paper in Industrial Crops & Products (2026) on the multi-omics-driven valorization of Fubaiju agricultural by-products into biodegradable films and biofertilizers.)</li>
+      <li>Principal Investigator  of the Guangdong Provincial "Climbing Plan" (攀登计划) project </li>
+      <li>PNAS manuscript under review, proposing the “Metabolic Partitioning Lock” — an epigenetic mechanism that stabilizes high-value secondary metabolite accumulation in vegetative tissues through virus-free propagation-induced DNA methylation reprogramming.</li>
+      <li>KDD manuscript under review, introducing ACLEGR-TADD, a novel adaptive continual learning framework for financial fraud detection that achieves state-of-the-art performance (94.7% PR-AUC) under extreme class imbalance (<0.2%) and adversarial concept drift.</li>
+      <li>Sole undergraduate invited for oral presentation (and poster) at the 4th Peking University “Boya Caisi” International Doctoral Forum (2025) in the Advanced Carbon Materials session.
+      <li>Reviewer for AAAI 2026 (CCF A) and invited reviewer for multiple SCI Q1 journals.
+      <li>Participated in deep learning algorithm development within the doctoral research group at the College of Advanced Interdisciplinary Studies, National University of Defense Technology
+    </ul>
+  </p>
+  <p>
+    I am passionate about using mathematical rigor and algorithmic innovation to solve complex problems at the interface of computational biology and sustainable materials science. I am open to collaborations, research internships, or discussions on GeoAI/ML applications in agriculture and bioeconomy. If interested, please reach out via email or WeChat.
+  </p>
+
+portrait_url: /assets/images/photos/profile.jpg
+portrait_caption: >-
+  Exploring intersections of math, biology, and sustainability.
+
+education:
+- name: Guangzhou University
+  logo: /assets/images/badges/Guangzhou_University_logo.png  # 请添加校徽图片
+  position: B.Sc. in Applied Mathematics (expected 2028)
+  date: Sep. 2024 - Present
+# 可后续添加更多教育经历
+
+experience:
+- name: Guangzhou University
+  logo: /assets/images/badges/Guangzhou_University_logo.png
+  position: Undergraduate Researcher - Plant Epigenetics & Bio-materials
+  date: 2025 - Present
+  
+- name: Peking University "Boya Caisi" International Doctoral Forum
+  logo: /assets/images/badges/Peking_University_logo.png
+  position: Oral Presenter (Advanced Carbon Materials Session)
+  date: Oct. 2025
+  
+- name: University of Bologna Academic Conference
+  logo: /assets/images/badges/University_of_Bologna_logo.jpg
+  position: Oral Presenter 
+  date: Apr. 2025
+# 可添加更多（如攀登计划、导师项目）
+
+awards:
+- name: Guangdong Provincial Climbing Plan (攀登计划) Project (拟立项)
+  date: Jan. 2026
+- name: Oral Presentation at 4th PKU "Boya Caisi" International Doctoral Forum
+  date: Oct. 2025
+- name: Co-author, SCI Q1 TOP Paper in Industrial Crops & Products
+  date: 2026
+# 可后续添加更多奖项
+
+footprints:
+- 兰州
+- 武汉
+- 西安
+- 北京
+- 郑州
+- 广州
+- 上海
+- 深圳
+- 香港
+- 澳门
+
+# 如果有publications、publications等section，可自行扩展（此模板中未提供，可在HTML中添加）
