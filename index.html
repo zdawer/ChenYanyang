@@ -1,0 +1,87 @@
+---
+layout: default
+title : Home
+navbar_title: Home
+---
+{% include widgets/profile_card.html %}
+
+{% if site.data.display.homepage.show_experience %}
+    {% include widgets/experience_card.html %}
+{% endif %}
+
+{% if site.data.display.homepage.show_news %}
+    {% assign count_news = site.news | size %}
+    {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+    {% endif %}
+{% endif %}
+
+{% if site.data.display.homepage.show_selected_publications %}
+    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+    {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-book-open"></i> Selected Publications'
+    %}
+{% endif %}
+
+{% assign selected_projects = site.projects | sort: "date" | reverse | where: "selected", true %}
+{% if site.data.display.homepage.show_selected_projects and selected_projects.size > 0 %}
+<div class="my-3 p-0 bg-white shadow-sm rounded-sm">
+    <h6 class="border-bottom border-gray p-3 mb-0">
+        <i class="fas fa-code"></i> Selected Projects
+        <a href="{{ 'projects' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+    </h6>
+    {% for item in selected_projects %}
+        {% assign is_last = forloop.last %}
+        {% include widgets/project_item.html item=item hide_bottom_border=is_last %}
+    {% endfor %}
+    <h6 class="d-block p-3 mt-0 text-right">
+        <a href="{{ 'projects' | relative_url }}">All projects <i class="fas fa-angle-double-right"></i></a>
+    </h6>
+</div>
+{% endif %}
+
+{% assign showcase_items = site.showcase | sort: "date" | reverse | where: "show", true | where: "group", "Not Just Research" %}
+{% if showcase_items.size > 0 %}
+<div class="my-3 p-0 bg-white shadow-sm rounded-sm">
+    <h6 class="border-bottom border-gray p-3 mb-0">
+        <i class="fas fa-camera"></i> Not Just Research
+        <a href="{{ 'showcase' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+    </h6>
+    <div class="p-3">
+        <div class="row grid mb-2">
+            <div class="grid-sizer col-1"></div>
+            {% for item in showcase_items %}
+            {%- if item.width >= 4 -%}{%- assign width_sm = 12 -%}{%- assign width_xs = 12 -%}
+            {%- elsif item.width >= 2 -%}{%- assign width_sm = 6 -%}{%- assign width_xs = 6 -%}
+            {%- else -%}{%- assign width_sm = item.width | times: 2 | at_most: 12 -%}{%- assign width_xs = item.width | times: 2 | at_most: 12 -%}
+            {%- endif -%}
+            <div class="p-2 grid-item col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
+                <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
+                    {{ item.content }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if site.data.profile.footprints %}
+<div class="my-3 p-0 bg-white shadow-sm rounded-sm">
+    <h6 class="border-bottom border-gray p-3 mb-0">
+        <i class="fas fa-route"></i> Footprints
+    </h6>
+    <div class="p-4">
+        <p class="text-muted mb-3" style="font-size: 0.95rem;">
+            Cities and regions I have visited along the way, each leaving behind a different memory, conversation, and perspective.
+        </p>
+        <div class="d-flex flex-wrap">
+            {% for city in site.data.profile.footprints %}
+            <span class="badge badge-light border mr-2 mb-2 px-3 py-2" style="font-size: 0.95rem;">{{ city }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
