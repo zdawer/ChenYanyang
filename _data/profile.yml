@@ -33,7 +33,7 @@ short_bio: >-
     I am the first author of an <strong>IROS 2026 accepted paper</strong> and will give an
     <strong>oral presentation in Pittsburgh, USA</strong>. Two of my first-author manuscripts
     on continual replay are <strong>under review at AAAI 2027</strong>. My research also includes
-    a 2026 study in <em>Industrial Crops &amp; Products</em> and manuscripts under review at PNAS and KDD.
+    a 2026 paper in <em>Industrial Crops and Products</em> for which I am the <strong>student first author</strong> and manuscripts under review at PNAS and KDD.
   </p>
   <p>
     I lead a <strong>national-level Undergraduate Innovation and Entrepreneurship Training Program
@@ -64,24 +64,11 @@ experience:
 - name: National Natural Science Foundation of China (NSFC) General Program
   position: Research Participant (参与国自然面上项目研究)
 
-- name: IROS 2026, Pittsburgh, USA
-  position: Forthcoming Oral Presenter; First Author of Accepted Paper
-  date: 2026
-
 - name: Guangzhou University
   logo: /assets/images/badges/Guangzhou_University_logo.png
   position: Undergraduate Researcher - Plant Epigenetics & Bio-materials
   date: 2025 - Present
   
-- name: Peking University "Boya Caisi" International Doctoral Forum
-  logo: /assets/images/badges/Peking_University_logo.png
-  position: Oral Presenter (Advanced Carbon Materials Session)
-  date: Oct. 2025
-  
-- name: University of Bologna Academic Conference
-  logo: /assets/images/badges/University_of_Bologna_logo.jpg
-  position: Oral Presenter 
-  date: Apr. 2025
 # 可添加更多（如攀登计划、导师项目）
 
 awards:
@@ -90,7 +77,7 @@ awards:
   date: Jan. 2026
 - name: Oral Presentation at 4th PKU "Boya Caisi" International Doctoral Forum
   date: Oct. 2025
-- name: Co-author, SCI Q1 TOP Paper in Industrial Crops & Products
+- name: Student first author, Industrial Crops and Products (2026)
   date: 2026
 # 可后续添加更多奖项
 

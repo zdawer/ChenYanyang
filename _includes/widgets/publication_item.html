@@ -1,85 +1,42 @@
 {% assign item = include.item %}
-{% assign has_authors = false %}
-{% if item.authors and item.authors.size > 0 %}
-    {% assign has_authors = true %}
-{% endif %}
-{% assign has_links = false %}
-{% if item.links and item.links.size > 0 %}
-    {% assign has_links = true %}
-{% endif %}
-{% capture publication_meta %}
-    {% if item.pub_pre %}{{ item.pub_pre }}{% endif %}
-    {% if item.pub %}<i>{{ item.pub }}</i>{% endif %}
-    {% if item.pub_post %}{{ item.pub_post }}{% endif %}
-    {% if item.pub_date %} {{ item.pub_date }}{% endif %}
-    {% if item.pub_last %} {{ item.pub_last }}{% endif %}
-{% endcapture %}
-{% assign publication_meta = publication_meta | strip %}
-<div class="d-none d-md-block">
-    <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
-        {% if item.cover %}
-        <div class="col-md-4 col-xl-3 mb-md-0 p-md-3">
-            {%- if item.cover -%}
-            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
-            {%- endif -%}
-        </div>
-        {% endif %}
-        <div class="{% if item.cover %}col-md-8 col-xl-9 p-3 pl-md-0{% else %}col-12 p-4{% endif %}">
-            <h5 class="mt-0 mb-2 publication-title">{{ item.title }}</h5>
-            {% if has_authors %}
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            {% endif %}
-            {% if publication_meta != "" %}
-            <p class="mt-0 mb-0 small">{{ publication_meta }}</p>
-            {% endif %}
-            {% if item.abstract %}
-            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
-            {% endif %}
-            {% if has_links %}
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                {% for link in item.links %}
-                {% if link[1].url %}
-                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
-                {% else %}
-                <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
-                {% endif %}
-                {% endfor %}
-            </p>
-            {% endif %}
-        </div>
-    </div>
-</div>
-
-<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-top{% endif %} {% if include.last %}rounded-bottom{% endif %}">
+<article class="publication-entry {% unless include.hide_bottom_border %}border-bottom border-gray{% endunless %}">
+  {% if item.cover or item.visual %}
+  <div class="publication-visual">
+    <div class="publication-badge">{{ item.badge | default: item.pub }}</div>
     {% if item.cover %}
-    <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
-    {% endif %}
-    <div class="w-100" style="background-color: rgba(255,255,255,0.9);">
-        <div class="d-flex align-items-start flex-column py-3 px-4">
-            <div class="mb-auto"></div>
-            <div>
-                <h5 class="mt-0 mb-2 publication-title">{{ item.title }}</h5>
-                {% if has_authors %}
-                <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                {% endif %}
-                {% if publication_meta != "" %}
-                <p class="mt-0 mb-0 small">{{ publication_meta }}</p>
-                {% endif %}
-                {% if item.abstract %}
-                <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
-                {% endif %}
-                {% if has_links %}
-                <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
-                    {% for link in item.links %}
-                    {% if link[1].url %}
-                    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
-                    {% else %}
-                    <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
-                    {% endif %}
-                    {% endfor %}
-                </p>
-                {% endif %}
-            </div>
-        </div>
+    <a href="{{ item.cover | relative_url }}" target="_blank" rel="noopener" aria-label="View figure for {{ item.title | escape }}">
+      <img src="{{ item.cover | relative_url }}" alt="{{ item.title | escape }} — paper figure" loading="lazy">
+    </a>
+    {% elsif item.visual == "fubaiju" %}
+    <div class="fubaiju-visual" role="img" aria-label="Research themes: Fubaiju leaves for bioactives, stems for biodegradable films, and roots for biofertilizers">
+      <p class="fubaiju-name"><i class="fas fa-seedling" aria-hidden="true"></i> Fubaiju</p>
+      <p class="fubaiju-subtitle">Agricultural by-products</p>
+      <div class="fubaiju-paths">
+        <div><i class="fas fa-leaf" aria-hidden="true"></i><strong>Leaves</strong><span>Bioactives</span></div>
+        <div><i class="fas fa-box-open" aria-hidden="true"></i><strong>Stems</strong><span>Biodegradable films</span></div>
+        <div><i class="fas fa-spa" aria-hidden="true"></i><strong>Roots</strong><span>Biofertilizers</span></div>
+      </div>
+      <p class="visual-caption">Research themes</p>
     </div>
-</div>
+    {% endif %}
+  </div>
+  {% endif %}
+  <div class="publication-details">
+    {% if item.status_label %}<span class="research-label {% if item.status_label == 'Under review' %}label-review{% endif %}">{{ item.status_label }}</span>{% endif %}
+    <h3 class="publication-title mt-2 mb-2">{{ item.title }}</h3>
+    {% if item.authors and item.authors.size > 0 %}
+      <p class="small mb-1">{% include widgets/author_list.html authors=item.authors %}</p>
+    {% endif %}
+    {% if item.author_note %}<p class="author-note small mb-1">{{ item.author_note }}</p>{% endif %}
+    <p class="small mb-2 publication-meta">{% if item.pub_pre %}{{ item.pub_pre }}{% endif %}{% if item.pub %}<i>{{ item.pub }}</i>{% endif %}{{ item.pub_post }}{% if item.pub_date %} · {{ item.pub_date }}{% endif %}{% if item.pub_last %} {{ item.pub_last }}{% endif %}</p>
+    {% if item.abstract %}<p class="small text-muted mb-2">{{ item.abstract }}</p>{% endif %}
+    {% if item.links and item.links.size > 0 %}
+    <div class="publication-links">
+      {% for link in item.links %}
+      {% if link[1].url %}<a href="{{ link[1].url }}" target="{{ link[1].target | default: '_blank' }}" rel="noopener">{{ link[0] }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      {% else %}<a href="{{ link[1] }}" target="_blank" rel="noopener">{{ link[0] }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>{% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</article>

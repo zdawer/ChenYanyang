@@ -1,12 +1,26 @@
 ---
-title: "Multi-omics-Driven Valorization of Fubaiju Agricultural By-products into Biodegradable Films and Biofertilizers"
-date: 2026-03-01 00:01:00 +0800
+title: "Valorization of Chrysanthemum morifolium 'Fubaiju' agricultural by-products: From multi-omics profiling to biodegradable materials and biofertilizer development"
+date: 2026-01-01 00:01:00 +0800
 selected: true
-pub: "Industrial Crops & Products"
-pub_post: " related work"
+pub: "Industrial Crops and Products"
+pub_post: ", 239, 122430"
 pub_date: "2026"
+badge: "ICP 2026"
+status_label: "Published"
+author_note: "Student first author: Yanyang Chen"
+visual: fubaiju
 authors:
-  - Chen Yanyang
+  - Yan Yao
+  - Yanyang Chen
+  - Yuexin Sun
+  - Jiaming Xiang
+  - Ping Zhang
+  - Zidong Zhang
 abstract: >-
-  A research effort centered on the high-value utilization of Fubaiju agricultural by-products, combining multi-omics analysis with sustainable bio-based material design.
+  An integrated valorization study connecting multi-omics profiling of Fubaiju
+  agricultural by-products with leaf-derived bioactive compounds, stem-derived
+  biodegradable films, and root-derived biofertilizers.
+links:
+  Paper: "https://www.sciencedirect.com/science/article/pii/S0926669025019776"
+  DOI: "https://doi.org/10.1016/j.indcrop.2025.122430"
 ---

@@ -2,6 +2,9 @@
 title: "Change the Mix, Not the Target: BORA for Objective-Preserving Replay Allocation in Continual Fraud Detection"
 date: 2026-09-05 00:02:00 +0800
 selected: true
+cover: /assets/images/covers/bora-lifecycle.png
+badge: "AAAI 2027"
+status_label: "Under review"
 pub: "AAAI 2027"
 pub_post: " · Under review · First author: Yanyang Chen"
 abstract: >-

@@ -1,0 +1,20 @@
+{% if site.data.talks %}
+<section id="academic-talks" class="my-3 bg-white shadow-sm rounded-sm" aria-labelledby="talks-heading">
+  <h2 id="talks-heading" class="section-heading border-bottom border-gray p-4 mb-0"><i class="fas fa-microphone-alt mr-2" aria-hidden="true"></i> Academic Talks &amp; Presentations</h2>
+  <div class="talk-list">
+    {% for talk in site.data.talks %}
+    <article class="talk-entry">
+      <a class="talk-logo" href="{{ talk.url }}" target="_blank" rel="noopener">
+        <img src="{{ talk.logo | relative_url }}" alt="{{ talk.venue | escape }} logo" loading="lazy">
+      </a>
+      <div>
+        <p class="talk-date mb-1">{{ talk.date }} <span aria-hidden="true">·</span> {{ talk.location }}</p>
+        <h3 class="talk-venue"><a href="{{ talk.url }}" target="_blank" rel="noopener">{{ talk.venue }}</a></h3>
+        <p class="mb-1">{{ talk.title }}</p>
+        <span class="research-label">{{ talk.role }}</span>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
