@@ -2,6 +2,10 @@
 title: "ACLEGR-TADD: Adaptive Continual Learning for Fraud Detection under Extreme Class Imbalance and Concept Drift"
 date: 2026-01-15 00:01:00 +0800
 selected: true
+status_label: "Under review"
+cover: /assets/images/architectures/kdd-architecture.svg
+cover_caption: "Framework overview"
+cover_alt: "High-level framework based on the available research summary."
 pub: "KDD"
 pub_post: " under review"
 authors:

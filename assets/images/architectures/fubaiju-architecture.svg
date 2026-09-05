@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc"><title id="title">fubaiju-architecture</title><desc id="desc">Source: published Industrial Crops and Products article abstract and user-provided title, DOI 10.1016/j.indcrop.2025.122430. Conceptual study workflow connects profiling to leaf bioactives, stem-derived films, and root-derived biofertilizers. Redrawn overview, not an original article figure.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#8190A3"/></marker><marker id="arrowTeal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#469584"/></marker></defs><rect width="960" height="600" fill="#FFFFFF"/><g font-family="Helvetica"><text font-family="Helvetica" x="32" y="44" text-anchor="start" font-size="28" font-weight="650" fill="#20334D">Whole-plant valorization</text>
+<text font-family="Helvetica" x="32" y="77" text-anchor="start" font-size="19" font-weight="400" fill="#67758A">Multi-omics profiling informs three complementary processing pathways.</text>
+<g id="byproducts"><rect x="30" y="242" width="177" height="105" rx="9" fill="#F4F6F9" stroke="#DCE3EB" stroke-width="1.6"/>
+<text font-family="Helvetica" x="118.5" y="287.5" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Fubaiju</text>
+<text font-family="Helvetica" x="118.5" y="317.5" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">by-products</text>
+</g>
+<g id="omics"><rect x="250" y="242" width="210" height="105" rx="9" fill="#EAF1FA" stroke="#6487B3" stroke-width="1.6"/>
+<text font-family="Helvetica" x="355" y="287.5" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Multi-omics</text>
+<text font-family="Helvetica" x="355" y="317.5" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">profiling</text>
+</g>
+<g id="leaves"><rect x="528" y="128" width="172" height="90" rx="9" fill="#E7F3F0" stroke="#469584" stroke-width="1.6"/>
+<text font-family="Helvetica" x="614" y="166" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Leaves</text>
+<text font-family="Helvetica" x="614" y="196" text-anchor="middle" font-size="19.4" font-weight="400" fill="#67758A">Bioactive fraction</text>
+</g>
+<g id="stems"><rect x="528" y="283" width="172" height="90" rx="9" fill="#E7F3F0" stroke="#469584" stroke-width="1.6"/>
+<text font-family="Helvetica" x="614" y="321" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Stems</text>
+<text font-family="Helvetica" x="614" y="351" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Cellulose</text>
+</g>
+<g id="roots"><rect x="528" y="438" width="172" height="90" rx="9" fill="#E7F3F0" stroke="#469584" stroke-width="1.6"/>
+<text font-family="Helvetica" x="614" y="476" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Roots</text>
+<text font-family="Helvetica" x="614" y="506" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Fermentation</text>
+</g>
+<g id="bioactive"><rect x="751" y="128" width="179" height="90" rx="9" fill="#FBF2E2" stroke="#C8A369" stroke-width="1.6"/>
+<text font-family="Helvetica" x="840.5" y="166" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Bioactive</text>
+<text font-family="Helvetica" x="840.5" y="196" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">compounds</text>
+</g>
+<g id="films"><rect x="751" y="283" width="179" height="90" rx="9" fill="#FBF2E2" stroke="#C8A369" stroke-width="1.6"/>
+<text font-family="Helvetica" x="840.5" y="321" text-anchor="middle" font-size="22.3" font-weight="600" fill="#20334D">Biodegradable</text>
+<text font-family="Helvetica" x="840.5" y="351" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">films</text>
+</g>
+<g id="fertilizer"><rect x="751" y="438" width="179" height="90" rx="9" fill="#FBF2E2" stroke="#C8A369" stroke-width="1.6"/>
+<text font-family="Helvetica" x="840.5" y="491" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Biofertilizers</text>
+</g>
+<path id="profile" d="M207 294 H250" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="profile-leaf" d="M460 294 H493 V173 H528" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="profile-stem" d="M493 294 V328 H528" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="profile-root" d="M493 328 V483 H528" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="leaf-product" d="M700 173 H751" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="stem-product" d="M700 328 H751" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="root-product" d="M700 483 H751" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<text font-family="Helvetica" x="352" y="379" text-anchor="middle" font-size="18" font-weight="400" fill="#67758A">Characterize and valorize</text><polygon points="250,294 240,299 240,289" fill="#8190A3"/><polygon points="528,173 518,178 518,168" fill="#8190A3"/><polygon points="528,328 518,333 518,323" fill="#8190A3"/><polygon points="528,483 518,488 518,478" fill="#8190A3"/><polygon points="751,173 741,178 741,168" fill="#8190A3"/><polygon points="751,328 741,333 741,323" fill="#8190A3"/><polygon points="751,483 741,488 741,478" fill="#8190A3"/></g></svg>

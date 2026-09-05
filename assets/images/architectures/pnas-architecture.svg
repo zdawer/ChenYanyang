@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc"><title id="title">pnas-architecture</title><desc id="desc">Source: existing author-provided PNAS research summary. A proposed mechanism from virus-free propagation through DNA methylation reprogramming to a metabolic partitioning lock and stabilized metabolite accumulation. Conceptual hypothesis overview; no unprovided genes, pathways or validation results added.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#8190A3"/></marker><marker id="arrowTeal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#469584"/></marker></defs><rect width="960" height="600" fill="#FFFFFF"/><g font-family="Helvetica"><text font-family="Helvetica" x="32" y="44" text-anchor="start" font-size="28" font-weight="650" fill="#20334D">Metabolic partitioning lock</text>
+<text font-family="Helvetica" x="32" y="77" text-anchor="start" font-size="19" font-weight="400" fill="#67758A">Proposed epigenetic mechanism in vegetative tissues.</text>
+<g id="mechanism"><rect x="255" y="139" width="672" height="194" rx="12" fill="#FFFFFF" stroke="#DCE3EB" stroke-width="1.7" /></g>
+<text font-family="Helvetica" x="275" y="171" text-anchor="start" font-size="20" font-weight="600" fill="#67758A">Proposed mechanism</text>
+<g id="propagation"><rect x="32" y="211" width="180" height="92" rx="9" fill="#F4F6F9" stroke="#DCE3EB" stroke-width="1.6"/>
+<text font-family="Helvetica" x="122" y="250" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Virus-free</text>
+<text font-family="Helvetica" x="122" y="280" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">propagation</text>
+</g>
+<g id="methylation"><rect x="283" y="211" width="271" height="92" rx="9" fill="#EAF1FA" stroke="#6487B3" stroke-width="1.6"/>
+<text font-family="Helvetica" x="418.5" y="250" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">DNA methylation</text>
+<text font-family="Helvetica" x="418.5" y="280" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Reprogramming</text>
+</g>
+<g id="partitioning"><rect x="607" y="211" width="291" height="92" rx="9" fill="#E7F3F0" stroke="#469584" stroke-width="1.6"/>
+<text font-family="Helvetica" x="752.5" y="250" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Metabolic</text>
+<text font-family="Helvetica" x="752.5" y="280" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">partitioning lock</text>
+</g>
+<path id="prop-methyl" d="M212 257 H283" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="methyl-lock" d="M554 257 H607" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<g id="outcome"><rect x="330" y="433" width="568" height="94" rx="9" fill="#FBF2E2" stroke="#C8A369" stroke-width="1.6"/>
+<text font-family="Helvetica" x="614" y="473" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Stable secondary metabolite accumulation</text>
+<text font-family="Helvetica" x="614" y="503" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Vegetative tissues</text>
+</g>
+<path id="lock-outcome" d="M753 303 V433" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<text font-family="Helvetica" x="153" y="482" text-anchor="middle" font-size="18" font-weight="400" fill="#67758A">Research overview</text><polygon points="283,257 273,262 273,252" fill="#8190A3"/><polygon points="607,257 597,262 597,252" fill="#8190A3"/><polygon points="753,433 748,423 758,423" fill="#8190A3"/></g></svg>

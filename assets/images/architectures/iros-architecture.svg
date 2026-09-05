@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc"><title id="title">iros-architecture</title><desc id="desc">Source: IROS manuscript Figure 1 and methods. EEG feeds a discrete HA-CSP pathway and a continuous adaptive mapping pathway. Both inform a graph-based MPC swarm planner. Haptic and AR feedback supports co-adaptation. Simplified method overview; no quantitative results.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#8190A3"/></marker><marker id="arrowTeal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#469584"/></marker></defs><rect width="960" height="600" fill="#FFFFFF"/><g font-family="Helvetica"><text font-family="Helvetica" x="32" y="44" text-anchor="start" font-size="28" font-weight="650" fill="#20334D">Co-adaptive neural encoding</text>
+<text font-family="Helvetica" x="32" y="77" text-anchor="start" font-size="19" font-weight="400" fill="#67758A">Two complementary pathways connect neural intent and swarm control.</text>
+<g id="encoder"><rect x="245" y="117" width="350" height="307" rx="12" fill="#FFFFFF" stroke="#DCE3EB" stroke-width="1.7" /></g>
+<text font-family="Helvetica" x="265" y="149" text-anchor="start" font-size="20" font-weight="600" fill="#67758A">C AHNE encoder</text>
+<g id="eeg"><rect x="30" y="228" width="165" height="96" rx="9" fill="#F4F6F9" stroke="#DCE3EB" stroke-width="1.6"/>
+<text font-family="Helvetica" x="112.5" y="269" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">EEG input</text>
+<text font-family="Helvetica" x="112.5" y="299" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Preprocessing</text>
+</g>
+<g id="discrete"><rect x="270" y="175" width="300" height="86" rx="9" fill="#EAF1FA" stroke="#6487B3" stroke-width="1.6"/>
+<text font-family="Helvetica" x="420" y="211" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">HA-CSP classifier</text>
+<text font-family="Helvetica" x="420" y="241" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Discrete intention</text>
+</g>
+<g id="continuous"><rect x="270" y="303" width="300" height="86" rx="9" fill="#E7F3F0" stroke="#469584" stroke-width="1.6"/>
+<text font-family="Helvetica" x="420" y="339" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Adaptive mapping</text>
+<text font-family="Helvetica" x="420" y="369" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Continuous motion</text>
+</g>
+<g id="planner"><rect x="666" y="229" width="255" height="90" rx="9" fill="#EAF1FA" stroke="#6487B3" stroke-width="1.6"/>
+<text font-family="Helvetica" x="793.5" y="267" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Graph-based MPC</text>
+<text font-family="Helvetica" x="793.5" y="297" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Safety constraints</text>
+</g>
+<g id="swarm"><rect x="666" y="366" width="255" height="76" rx="9" fill="#F4F6F9" stroke="#DCE3EB" stroke-width="1.6"/>
+<text font-family="Helvetica" x="793.5" y="412" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Drone swarm</text>
+</g>
+<g id="feedback"><rect x="303" y="487" width="320" height="69" rx="9" fill="#E7F3F0" stroke="#469584" stroke-width="1.6"/>
+<text font-family="Helvetica" x="463" y="529.5" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Haptic + AR feedback</text>
+</g>
+<path id="input-classifier" d="M195 257 H222 V218 H270" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="input-mapping" d="M222 257 V346 H270" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="discrete-planner" d="M570 218 H629 V257 H666" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="continuous-planner" d="M570 346 H629 V289 H666" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="planner-swarm" d="M794 319 V366" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="swarm-feedback" d="M794 442 V522 H623" fill="none" stroke="#469584" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="7 6" />
+<path id="feedback-user" d="M303 522 H111 V324" fill="none" stroke="#469584" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="7 6" />
+<text font-family="Helvetica" x="722" y="490" text-anchor="middle" font-size="18" font-weight="400" fill="#67758A">Co-adaptation</text>
+<text font-family="Helvetica" x="420" y="291" text-anchor="middle" font-size="18" font-weight="400" fill="#67758A">Spectral gradient features</text><polygon points="270,218 260,223 260,213" fill="#8190A3"/><polygon points="270,346 260,351 260,341" fill="#8190A3"/><polygon points="666,257 656,262 656,252" fill="#8190A3"/><polygon points="666,289 656,294 656,284" fill="#8190A3"/><polygon points="794,366 789,356 799,356" fill="#8190A3"/><polygon points="623,522 633,517 633,527" fill="#469584"/><polygon points="111,324 116,334 106,334" fill="#469584"/></g></svg>

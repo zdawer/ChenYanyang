@@ -1,40 +1,28 @@
 {% assign item = include.item %}
 <article class="publication-entry {% unless include.hide_bottom_border %}border-bottom border-gray{% endunless %}">
-  {% if item.cover or item.visual %}
-  <div class="publication-visual">
-    <div class="publication-badge">{{ item.badge | default: item.pub }}</div>
-    {% if item.cover %}
-    <a href="{{ item.cover | relative_url }}" target="_blank" rel="noopener" aria-label="View figure for {{ item.title | escape }}">
-      <img src="{{ item.cover | relative_url }}" alt="{{ item.title | escape }} — paper figure" loading="lazy">
+  {% if item.cover %}
+  <figure class="publication-visual">
+    <a class="architecture-link" href="{{ item.cover | relative_url }}" target="_blank" rel="noopener" aria-label="Open {{ item.cover_caption | default: 'method overview' | escape }} for {{ item.title | escape }}">
+      <img src="{{ item.cover | relative_url }}" alt="{{ item.cover_alt | default: item.title | escape }}" width="960" height="600" decoding="async">
     </a>
-    {% elsif item.visual == "fubaiju" %}
-    <div class="fubaiju-visual" role="img" aria-label="Research themes: Fubaiju leaves for bioactives, stems for biodegradable films, and roots for biofertilizers">
-      <p class="fubaiju-name"><i class="fas fa-seedling" aria-hidden="true"></i> Fubaiju</p>
-      <p class="fubaiju-subtitle">Agricultural by-products</p>
-      <div class="fubaiju-paths">
-        <div><i class="fas fa-leaf" aria-hidden="true"></i><strong>Leaves</strong><span>Bioactives</span></div>
-        <div><i class="fas fa-box-open" aria-hidden="true"></i><strong>Stems</strong><span>Biodegradable films</span></div>
-        <div><i class="fas fa-spa" aria-hidden="true"></i><strong>Roots</strong><span>Biofertilizers</span></div>
-      </div>
-      <p class="visual-caption">Research themes</p>
-    </div>
-    {% endif %}
-  </div>
+    <figcaption><span>{{ item.cover_caption | default: 'Method overview' }}</span><a href="{{ item.cover | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge architecture for {{ item.title | escape }}">View architecture <span aria-hidden="true">↗</span></a></figcaption>
+  </figure>
   {% endif %}
   <div class="publication-details">
-    {% if item.status_label %}<span class="research-label {% if item.status_label == 'Under review' %}label-review{% endif %}">{{ item.status_label }}</span>{% endif %}
-    <h3 class="publication-title mt-2 mb-2">{{ item.title }}</h3>
-    {% if item.authors and item.authors.size > 0 %}
-      <p class="small mb-1">{% include widgets/author_list.html authors=item.authors %}</p>
-    {% endif %}
-    {% if item.author_note %}<p class="author-note small mb-1">{{ item.author_note }}</p>{% endif %}
-    <p class="small mb-2 publication-meta">{% if item.pub_pre %}{{ item.pub_pre }}{% endif %}{% if item.pub %}<i>{{ item.pub }}</i>{% endif %}{{ item.pub_post }}{% if item.pub_date %} · {{ item.pub_date }}{% endif %}{% if item.pub_last %} {{ item.pub_last }}{% endif %}</p>
-    {% if item.abstract %}<p class="small text-muted mb-2">{{ item.abstract }}</p>{% endif %}
+    <div class="publication-eyebrow">
+      <span class="publication-venue">{{ item.badge | default: item.pub }}</span>
+      {% if item.status_label %}<span class="publication-status {% if item.status_label == 'Under review' %}status-review{% endif %}">{{ item.status_label }}</span>{% endif %}
+    </div>
+    <h3 class="publication-title">{{ item.title }}</h3>
+    {% if item.authors and item.authors.size > 0 %}<p class="publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>{% endif %}
+    {% if item.author_note %}<p class="author-note">{{ item.author_note }}</p>{% endif %}
+    <p class="publication-meta">{% if item.pub_pre %}{{ item.pub_pre }}{% endif %}{% if item.pub %}<i>{{ item.pub }}</i>{% endif %}{{ item.pub_post }}{% if item.pub_date %} · {{ item.pub_date }}{% endif %}{% if item.pub_last %} {{ item.pub_last }}{% endif %}</p>
+    {% if item.abstract %}<p class="publication-abstract">{{ item.abstract }}</p>{% endif %}
     {% if item.links and item.links.size > 0 %}
     <div class="publication-links">
       {% for link in item.links %}
-      {% if link[1].url %}<a href="{{ link[1].url }}" target="{{ link[1].target | default: '_blank' }}" rel="noopener">{{ link[0] }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-      {% else %}<a href="{{ link[1] }}" target="_blank" rel="noopener">{{ link[0] }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>{% endif %}
+      {% if link[1].url %}<a href="{{ link[1].url }}" target="{{ link[1].target | default: '_blank' }}" rel="noopener">{{ link[0] }} <span aria-hidden="true">↗</span></a>
+      {% else %}<a href="{{ link[1] }}" target="_blank" rel="noopener">{{ link[0] }} <span aria-hidden="true">↗</span></a>{% endif %}
       {% endfor %}
     </div>
     {% endif %}

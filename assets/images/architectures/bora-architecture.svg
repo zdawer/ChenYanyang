@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc"><title id="title">bora-architecture</title><desc id="desc">Source: BORA manuscript Figure 1, abstract and supplement lifecycle. The independent probe selects rounded floor-constrained allocation; realized mixture corrects fresh formal replay. Current batch is omitted from this replay-only overview; the figure does not claim the replay path is the entire detector input.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#8190A3"/></marker><marker id="arrowTeal" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#469584"/></marker></defs><rect width="960" height="600" fill="#FFFFFF"/><g font-family="Helvetica"><text font-family="Helvetica" x="32" y="44" text-anchor="start" font-size="28" font-weight="650" fill="#20334D">Objective-preserving replay allocation</text>
+<text font-family="Helvetica" x="32" y="77" text-anchor="start" font-size="19" font-weight="400" fill="#67758A">BORA separates allocation decisions from the replay used for fitting.</text>
+<g id="selection-stage"><rect x="222" y="105" width="708" height="187" rx="12" fill="#FFFFFF" stroke="#DCE3EB" stroke-width="1.7" /></g>
+<text font-family="Helvetica" x="242" y="137" text-anchor="start" font-size="20" font-weight="600" fill="#67758A">1  Probe and allocate</text>
+<g id="fit-stage"><rect x="222" y="347" width="708" height="183" rx="12" fill="#FFFFFF" stroke="#DCE3EB" stroke-width="1.7" /></g>
+<text font-family="Helvetica" x="242" y="379" text-anchor="start" font-size="20" font-weight="600" fill="#67758A">2  Draw fresh replay and fit</text>
+<g id="generator"><rect x="30" y="174" width="163" height="104" rx="9" fill="#F4F6F9" stroke="#DCE3EB" stroke-width="1.6"/>
+<text font-family="Helvetica" x="111.5" y="219" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Historical</text>
+<text font-family="Helvetica" x="111.5" y="249" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">generator</text>
+</g>
+<g id="probe"><rect x="247" y="168" width="184" height="85" rx="9" fill="#EAF1FA" stroke="#6487B3" stroke-width="1.6"/>
+<text font-family="Helvetica" x="339" y="203.5" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Independent</text>
+<text font-family="Helvetica" x="339" y="233.5" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">probe</text>
+</g>
+<g id="allocation"><rect x="472" y="168" width="207" height="85" rx="9" fill="#E7F3F0" stroke="#469584" stroke-width="1.6"/>
+<text font-family="Helvetica" x="575.5" y="203.5" text-anchor="middle" font-size="22.1" font-weight="600" fill="#20334D">Integer allocation</text>
+<text font-family="Helvetica" x="575.5" y="233.5" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Floor-constrained</text>
+</g>
+<g id="mixture"><rect x="719" y="168" width="183" height="85" rx="9" fill="#FBF2E2" stroke="#C8A369" stroke-width="1.6"/>
+<text font-family="Helvetica" x="810.5" y="203.5" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Realized mix</text>
+<text font-family="Helvetica" x="810.5" y="233.5" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">q = counts / m</text>
+</g>
+<g id="formal"><rect x="247" y="411" width="184" height="85" rx="9" fill="#EAF1FA" stroke="#6487B3" stroke-width="1.6"/>
+<text font-family="Helvetica" x="339" y="446.5" text-anchor="middle" font-size="25" font-weight="600" fill="#20334D">Fresh formal</text>
+<text font-family="Helvetica" x="339" y="476.5" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">replay</text>
+</g>
+<g id="correction"><rect x="472" y="411" width="207" height="85" rx="9" fill="#E7F3F0" stroke="#469584" stroke-width="1.6"/>
+<text font-family="Helvetica" x="575.5" y="446.5" text-anchor="middle" font-size="21.0" font-weight="600" fill="#20334D">Mixture correction</text>
+<text font-family="Helvetica" x="575.5" y="476.5" text-anchor="middle" font-size="21" font-weight="400" fill="#67758A">Target / source</text>
+</g>
+<g id="detector"><rect x="719" y="411" width="183" height="85" rx="9" fill="#F4F6F9" stroke="#DCE3EB" stroke-width="1.6"/>
+<text font-family="Helvetica" x="810.5" y="461.5" text-anchor="middle" font-size="20.9" font-weight="600" fill="#20334D">Detector update</text>
+</g>
+<path id="gen-probe" d="M193 211 H247" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="probe-counts" d="M431 210 H472" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="counts-q" d="M679 210 H719" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="gen-formal" d="M111 278 V454 H247" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="formal-correct" d="M431 454 H472" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="correct-fit" d="M679 454 H719" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<path id="q-correction" d="M811 253 V318 H576 V411" fill="none" stroke="#8190A3" stroke-width="2.3" stroke-linejoin="round"  />
+<text font-family="Helvetica" x="523" y="309" text-anchor="middle" font-size="18" font-weight="400" fill="#67758A">Correct with realized mixture</text>
+<text font-family="Helvetica" x="579" y="571" text-anchor="middle" font-size="18" font-weight="400" fill="#67758A">Fixed target risk · Disjoint probe and formal draws</text><polygon points="247,211 237,216 237,206" fill="#8190A3"/><polygon points="472,210 462,215 462,205" fill="#8190A3"/><polygon points="719,210 709,215 709,205" fill="#8190A3"/><polygon points="247,454 237,459 237,449" fill="#8190A3"/><polygon points="472,454 462,459 462,449" fill="#8190A3"/><polygon points="719,454 709,459 709,449" fill="#8190A3"/><polygon points="576,411 571,401 581,401" fill="#8190A3"/></g></svg>
