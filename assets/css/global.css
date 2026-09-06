@@ -101,8 +101,8 @@ body.figure-viewer-open { overflow:hidden; }
 .figure-viewer-close:focus-visible { outline:2px solid var(--blue); outline-offset:3px; }
 .figure-viewer-stage { display:flex; align-items:center; justify-content:center; min-height:160px; padding:1rem; background:#f5f7fa; }
 .figure-viewer-stage img { display:block; width:100%; height:auto; max-height:65vh; max-height:65dvh; object-fit:contain; }
-.figure-viewer-stage img[hidden],.figure-viewer-error[hidden] { display:none; }
-.figure-viewer-error { margin:1rem; color:var(--muted); font-size:.9rem; }
+.figure-viewer-stage [hidden] { display:none; }
+.figure-viewer-loading,.figure-viewer-error { margin:1rem; color:var(--muted); font-size:.9rem; line-height:1.6; text-align:center; }
 .figure-viewer-footer { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding:.9rem 1.2rem; border-top:1px solid var(--rule); }
 .figure-viewer-description { max-width:100ch; }
 .figure-viewer-description p { margin:0; color:var(--muted); font-size:.76rem; line-height:1.55; }

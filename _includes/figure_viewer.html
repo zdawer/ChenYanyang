@@ -7,7 +7,8 @@
     <button class="figure-viewer-close" type="button" aria-label="Close figure" autofocus><span aria-hidden="true">×</span></button>
   </div>
   <div class="figure-viewer-stage">
-    <img id="figure-viewer-image" alt="" decoding="async">
+    <img id="figure-viewer-image" alt="" decoding="async" hidden>
+    <p class="figure-viewer-loading" role="status" hidden>Loading full-resolution figure…</p>
     <p class="figure-viewer-error" role="status" hidden>The preview could not be loaded. You can open the full-resolution image below.</p>
   </div>
   <div class="figure-viewer-footer">
