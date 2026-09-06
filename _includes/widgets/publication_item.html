@@ -1,11 +1,14 @@
 {% assign item = include.item %}
 <article class="publication-entry {% unless include.hide_bottom_border %}border-bottom border-gray{% endunless %}">
   {% if item.cover %}
+  {% assign figure_full = item.cover_full | default: item.cover %}
+  {% assign figure_caption = item.cover_caption | default: 'Research concept' %}
   <figure class="publication-visual">
-    <a class="architecture-link" href="{{ item.cover | relative_url }}" target="_blank" rel="noopener" aria-label="Open {{ item.cover_caption | default: 'method overview' | escape }} for {{ item.title | escape }}">
-      <img src="{{ item.cover | relative_url }}" alt="{{ item.cover_alt | default: item.title | escape }}" width="960" height="600" decoding="async">
+    <a class="architecture-link" href="{{ figure_full | relative_url }}" target="_blank" rel="noopener" data-figure-viewer data-figure-title="{{ item.title | escape }}" data-figure-caption="{{ figure_caption | escape }}" data-figure-note="{{ item.cover_note | escape }}" data-figure-alt="{{ item.cover_alt | default: item.title | escape }}" aria-label="View figure for {{ item.title | escape }}">
+      <img src="{{ item.cover | relative_url }}" alt="{{ item.cover_alt | default: item.title | escape }}"{% if item.cover_width and item.cover_height %} width="{{ item.cover_width }}" height="{{ item.cover_height }}"{% endif %} loading="lazy" decoding="async">
     </a>
-    <figcaption><span>{{ item.cover_caption | default: 'Method overview' }}</span><a href="{{ item.cover | relative_url }}" target="_blank" rel="noopener" aria-label="Enlarge architecture for {{ item.title | escape }}">View architecture <span aria-hidden="true">↗</span></a></figcaption>
+    <figcaption><span>{{ figure_caption | escape }}</span><a href="{{ figure_full | relative_url }}" target="_blank" rel="noopener" data-figure-viewer data-figure-title="{{ item.title | escape }}" data-figure-caption="{{ figure_caption | escape }}" data-figure-note="{{ item.cover_note | escape }}" data-figure-alt="{{ item.cover_alt | default: item.title | escape }}" aria-label="View figure for {{ item.title | escape }}">View figure <span aria-hidden="true">↗</span></a></figcaption>
+    {% if item.cover_note %}<p class="figure-note">{{ item.cover_note | escape }}</p>{% endif %}
   </figure>
   {% endif %}
   <div class="publication-details">

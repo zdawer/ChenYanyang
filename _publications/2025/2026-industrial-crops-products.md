@@ -2,9 +2,13 @@
 title: "Valorization of Chrysanthemum morifolium 'Fubaiju' agricultural by-products: From multi-omics profiling to biodegradable materials and biofertilizer development"
 date: 2026-01-01 00:01:00 +0800
 selected: true
-cover: /assets/images/architectures/fubaiju-architecture.svg
-cover_caption: "Study architecture"
-cover_alt: "A unified profiling-to-valorization workflow for leaves, stems, and roots."
+cover: /assets/images/research-concepts/fubaiju-concept.webp
+cover_full: /assets/images/research-concepts/fubaiju-concept-full.webp
+cover_width: 1693
+cover_height: 929
+cover_note: "AI-generated concept illustration; details are schematic."
+cover_caption: "Simulated research concept"
+cover_alt: "Simulated concept of plant-organ profiling and three by-product valorization routes."
 pub: "Industrial Crops and Products"
 pub_post: ", 239, 122430"
 pub_date: "2026"
