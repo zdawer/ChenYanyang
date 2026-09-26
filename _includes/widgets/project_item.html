@@ -2,11 +2,14 @@
 <article class="publication-entry {% unless include.hide_bottom_border %}border-bottom border-gray{% endunless %}">
   {% if item.cover %}
   {% assign figure_full = item.cover_full | default: item.cover %}
-  {% assign figure_caption = item.cover_caption | default: 'Research concept' %}
+  {% assign figure_caption = item.cover_caption | default: '' %}
+  {% if figure_caption == 'Simulated research concept' %}{% assign figure_caption = '' %}{% endif %}
+  {% assign figure_note = item.cover_note | default: '' %}
+  {% if figure_note == 'AI-generated concept illustration; details are schematic.' %}{% assign figure_note = '' %}{% endif %}
   <figure class="publication-visual">
-    <a class="architecture-link" href="{{ figure_full | relative_url }}" target="_blank" rel="noopener" data-figure-viewer data-figure-title="{{ item.title | escape }}" data-figure-caption="{{ figure_caption | escape }}" data-figure-note="{{ item.cover_note | escape }}" data-figure-alt="{{ item.cover_alt | default: item.title | escape }}" aria-label="View figure for {{ item.title | escape }}"><img src="{{ item.cover | relative_url }}" alt="{{ item.cover_alt | default: item.title | escape }}"{% if item.cover_width and item.cover_height %} width="{{ item.cover_width }}" height="{{ item.cover_height }}"{% endif %} loading="lazy" decoding="async"></a>
-    <figcaption><span>{{ figure_caption | escape }}</span><a href="{{ figure_full | relative_url }}" target="_blank" rel="noopener" data-figure-viewer data-figure-title="{{ item.title | escape }}" data-figure-caption="{{ figure_caption | escape }}" data-figure-note="{{ item.cover_note | escape }}" data-figure-alt="{{ item.cover_alt | default: item.title | escape }}" aria-label="View figure for {{ item.title | escape }}">View figure <span aria-hidden="true">↗</span></a></figcaption>
-    {% if item.cover_note %}<p class="figure-note">{{ item.cover_note | escape }}</p>{% endif %}
+    <a class="architecture-link" href="{{ figure_full | relative_url }}" target="_blank" rel="noopener" data-figure-viewer data-figure-title="{{ item.title | escape }}" data-figure-caption="{{ figure_caption | escape }}" data-figure-note="{{ figure_note | escape }}" data-figure-alt="{{ item.cover_alt | default: item.title | escape }}" aria-label="View figure for {{ item.title | escape }}"><img src="{{ item.cover | relative_url }}" alt="{{ item.cover_alt | default: item.title | escape }}"{% if item.cover_width and item.cover_height %} width="{{ item.cover_width }}" height="{{ item.cover_height }}"{% endif %} loading="lazy" decoding="async"></a>
+    <figcaption>{% if figure_caption != empty %}<span>{{ figure_caption | escape }}</span>{% endif %}<a href="{{ figure_full | relative_url }}" target="_blank" rel="noopener" data-figure-viewer data-figure-title="{{ item.title | escape }}" data-figure-caption="{{ figure_caption | escape }}" data-figure-note="{{ figure_note | escape }}" data-figure-alt="{{ item.cover_alt | default: item.title | escape }}" aria-label="View figure for {{ item.title | escape }}">View figure <span aria-hidden="true">↗</span></a></figcaption>
+    {% if figure_note != empty %}<p class="figure-note">{{ figure_note | escape }}</p>{% endif %}
   </figure>
   {% endif %}
   <div class="publication-details">
