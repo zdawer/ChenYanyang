@@ -60,7 +60,8 @@
       if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
       title.textContent = link.dataset.figureTitle || 'Research figure';
-      caption.textContent = link.dataset.figureCaption || 'Research concept';
+      caption.textContent = link.dataset.figureCaption || '';
+      caption.hidden = !caption.textContent;
       note.textContent = link.dataset.figureNote || '';
       note.hidden = !note.textContent;
       original.href = link.href;
