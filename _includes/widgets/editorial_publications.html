@@ -1,0 +1,9 @@
+{% assign publications = include.publications %}
+<section id="research" class="research-section my-4" aria-labelledby="research-heading">
+ <div class="research-section-header"><div><p class="section-kicker">01 / Research collection</p><h2 id="research-heading">Selected <em>work.</em></h2></div><p class="section-intro">Methods, systems, and questions <br>across learning and the living world.</p></div>
+ <div class="research-toolbar"><div class="research-filters" hidden role="group" aria-label="Filter publications"><button type="button" data-filter="all" aria-pressed="true">All work</button><button type="button" data-filter="published" aria-pressed="false">Published &amp; accepted</button><button type="button" data-filter="review" aria-pressed="false">Under review</button></div><a href="{{ 'publications' | relative_url }}">Publication archive ↗</a></div>
+ <p class="filter-count sr-only" aria-live="polite"></p><div class="publication-grid">
+ {% for item in publications %}{% if item.status_label == 'Published' or item.status_label contains 'Accepted' %}{% include widgets/publication_item.html item=item hide_bottom_border=true %}{% endif %}{% endfor %}
+ {% for item in publications %}{% unless item.status_label == 'Published' or item.status_label contains 'Accepted' %}{% include widgets/publication_item.html item=item hide_bottom_border=true %}{% endunless %}{% endfor %}
+ </div>
+</section>

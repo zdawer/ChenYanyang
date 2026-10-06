@@ -3,25 +3,27 @@ layout: default
 title : Home
 navbar_title: Home
 ---
-{% include widgets/cyber_hero.html %}
-
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
+{% include widgets/editorial_hero.html %}
 
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
     {%
-        include widgets/publication_card.html
+        include widgets/editorial_publications.html
         publications=pubs
         title='<i class="fas fa-book-open"></i> Selected Publications &amp; Preprints'
     %}
 {% endif %}
 
 {% include widgets/talks_card.html %}
+<section id="background" class="editorial-background"><div><p class="section-kicker">03 / Background</p><h2>Research &amp;<br>perspective.</h2></div><div class="text-profile-bio">{{ site.data.profile.short_bio }}</div></section>
+<details class="editorial-news"><summary>News &amp; milestones</summary>{% if site.data.display.homepage.show_news %}
+    {% assign count_news = site.news | size %}
+    {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+    {% endif %}
+{% endif %}
+
+</details>
 
 {% if site.data.display.homepage.show_experience %}
     {% include widgets/experience_card.html %}
