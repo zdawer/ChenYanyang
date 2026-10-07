@@ -5,10 +5,10 @@
  const help = section.querySelector('.map-help');
  const cities = JSON.parse(document.querySelector('#footprint-data').textContent);
  const start = () => {
-  const map = L.map(container,{scrollWheelZoom:false,minZoom:1,maxZoom:15});
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+  const map = L.map(container,{scrollWheelZoom:false,minZoom:0,maxZoom:15,zoomSnap:.25});
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,noWrap:true,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
   const icon = L.divIcon({className:'footprint-pin',html:'<span></span>',iconSize:[22,22],iconAnchor:[11,11]});
-  const points = cities.map(city => [city.lat,city.lng<0?city.lng+360:city.lng]);
+  const points = cities.map(city => [city.lat,city.lng]);
   const markers = cities.map((city,i) => {
    const content = document.createElement('div');
    const title = document.createElement('strong');title.textContent=city.name;
@@ -17,8 +17,10 @@
    return L.marker(points[i],{icon,title:city.name,alt:city.name,keyboard:true}).addTo(map).bindPopup(content);
   });
   const fit = region => {
-   const subset=points.filter((p,i)=>region==='all'||(region==='america'?cities[i].lng<0:cities[i].lng>=0));
-   map.fitBounds(subset,{padding:[40,40],maxZoom:region==='all'?3:5});
+   map.closePopup();
+   if(region==='all'){map.fitBounds([[-55,-180],[78,180]],{padding:[12,12],maxZoom:2.5});return;}
+   const subset=points.filter((p,i)=>region==='america'?cities[i].lng<0:cities[i].lng>=0);
+   map.fitBounds(subset,{padding:[40,40],maxZoom:5});
   };
   fit('all');section.querySelector('.map-regions').hidden=false;
   section.querySelectorAll('[data-map-region]').forEach(button=>button.addEventListener('click',()=>fit(button.dataset.mapRegion)));
