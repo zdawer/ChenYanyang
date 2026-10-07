@@ -18,34 +18,8 @@ orcid: 0009-0002-0667-3153
 
 short_bio_text_justify: false
 short_bio: >-
-  <p>
-    I am an undergraduate researcher in <strong>Applied Mathematics at Guangzhou University</strong>
-    (B.Sc. expected 2028). My research connects mathematical modeling and machine learning
-    with problems in adaptive intelligence, biological systems, and sustainable materials.
-  </p>
-  <p>
-    In machine learning, I study <strong>continual learning, replay evaluation, and fraud detection</strong>
-    under class imbalance and concept drift. I also work on <strong>co-adaptive brain-computer
-    interfaces for multi-drone control</strong>. In interdisciplinary research, I investigate plant
-    epigenetics, multi-omics, and the valorization of agricultural by-products.
-  </p>
-  <p>
-    I am the first author of an <strong>IROS 2026 accepted paper</strong> and will give an
-    <strong>oral presentation in Pittsburgh, USA</strong>. My first-author manuscript
-    <em>When Replay Gains Don’t Replay</em> has <strong>passed Phase 1 of the AAAI 2027 review process</strong>
-    and remains under review. My research also includes
-    a 2026 paper in <em>Industrial Crops and Products</em> for which I am the <strong>student first author</strong> and manuscripts under review at PNAS and KDD.
-  </p>
-  <p>
-    I lead a <strong>national-level Undergraduate Innovation and Entrepreneurship Training Program
-    project (国家级大学生创新创业训练计划)</strong> and a Guangdong Provincial Climbing Plan project.
-    I also participate in research supported by an <strong>NSFC General Program
-    (国家自然科学基金面上项目)</strong>.
-  </p>
-  <p class="mb-0">
-    I welcome research collaborations and internship opportunities in machine learning,
-    brain-computer interfaces, and computational biology.
-  </p>
+  <p>I study continual learning and adaptive brain–computer interfaces, with a parallel interest in computational biology and sustainable materials.</p>
+  <p>I welcome research collaborations and internship opportunities in machine learning, brain–computer interfaces, and computational biology.</p>
 
 portrait_url: /assets/images/photos/profile.png
 portrait_caption: >-
@@ -65,23 +39,9 @@ experience:
 - name: National Natural Science Foundation of China (NSFC) General Program
   position: Research Participant (参与国自然面上项目研究)
 
-- name: Guangzhou University
-  logo: /assets/images/badges/Guangzhou_University_logo.png
-  position: Undergraduate Researcher - Plant Epigenetics & Bio-materials
-  date: 2025 - Present
-  
-# 可添加更多（如攀登计划、导师项目）
+- name: Guangdong Provincial Climbing Plan (攀登计划)
+  position: Project Lead · Proposed for approval (拟立项)
+  date: Jan. 2026
 
 awards:
 - name: National Second Prize, China Undergraduate Mathematical Contest in Modeling (全国大学生数学建模竞赛国家二等奖)
-- name: National-level Undergraduate Innovation and Entrepreneurship Training Program Project — Approved; Project Lead
-- name: Guangdong Provincial Climbing Plan (攀登计划) Project (拟立项)
-  date: Jan. 2026
-- name: Oral Presentation at 4th PKU "Boya Caisi" International Doctoral Forum
-  date: Oct. 2025
-- name: Student first author, Industrial Crops and Products (2026)
-  date: 2026
-# 可后续添加更多奖项
-
-
-# 如果有publications、publications等section，可自行扩展（此模板中未提供，可在HTML中添加）

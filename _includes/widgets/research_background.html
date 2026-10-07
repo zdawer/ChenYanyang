@@ -1,0 +1,9 @@
+<section id="background" class="academic-background" aria-labelledby="background-heading">
+ <div class="research-section-header"><div><p class="section-kicker">03 / Background</p><h2 id="background-heading">Beyond the <em>papers.</em></h2></div><a href="{{ '/projects' | relative_url }}">Project archive ↗</a></div>
+ <div class="background-grid">
+  <div class="background-block"><h3>Education</h3>{% for entry in site.data.profile.education %}<div class="background-entry"><span class="entry-date">{{ entry.date }}</span><h4>{{ entry.name }}</h4><p>{{ entry.position }}</p></div>{% endfor %}</div>
+  <div class="background-block"><h3>Research experience</h3>{% for entry in site.data.profile.experience %}<div class="background-entry"><h4>{{ entry.name }}</h4><p>{{ entry.position }}</p>{% if entry.date %}<span class="entry-date">{{ entry.date }}</span>{% endif %}</div>{% endfor %}</div>
+  <div class="background-block"><h3>Selected honor</h3>{% for entry in site.data.profile.awards %}<div class="background-entry"><h4>{{ entry.name }}</h4>{% if entry.date %}<span class="entry-date">{{ entry.date }}</span>{% endif %}</div>{% endfor %}</div>
+  <div class="background-block"><h3>Elsewhere</h3><p class="background-note">A few things beyond research.</p><a class="text-link" href="{{ '/showcase' | relative_url }}">Personal collection ↗</a></div>
+ </div>
+</section>

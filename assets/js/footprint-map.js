@@ -6,7 +6,7 @@
  const cities = JSON.parse(document.querySelector('#footprint-data').textContent);
  const start = () => {
   const map = L.map(container,{scrollWheelZoom:false,minZoom:0,maxZoom:15,zoomSnap:.25});
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,noWrap:true,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,noWrap:true,bounds:[[-85,-180],[85,180]],attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
   const icon = L.divIcon({className:'footprint-pin',html:'<span></span>',iconSize:[22,22],iconAnchor:[11,11]});
   const points = cities.map(city => [city.lat,city.lng]);
   const markers = cities.map((city,i) => {
@@ -18,6 +18,8 @@
   });
   const fit = region => {
    map.closePopup();
+   section.querySelector("select").value="";
+   help.textContent="点击标点查看城市，使用 + / − 缩放地图。";
    if(region==='all'){map.fitBounds([[-55,-180],[78,180]],{padding:[12,12],maxZoom:2.5});return;}
    const subset=points.filter((p,i)=>region==='america'?cities[i].lng<0:cities[i].lng>=0);
    map.fitBounds(subset,{padding:[40,40],maxZoom:5});

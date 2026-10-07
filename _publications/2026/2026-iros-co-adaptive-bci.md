@@ -22,6 +22,5 @@ abstract: >-
   intentions with continuous motion parameters for multi-drone swarm control.
   Hybrid neural encoding, haptic and augmented-reality feedback, and a
   graph-based model predictive controller support adaptive, collision-aware
-  formation control. Yanyang Chen is the first author and will give an oral
-  presentation in Pittsburgh, USA.
+  formation control.
 ---
