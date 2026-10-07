@@ -1,0 +1,15 @@
+- {name: 兰州, english: Lanzhou, lat: 36.0611, lng: 103.8343}
+- {name: 武汉, english: Wuhan, lat: 30.5928, lng: 114.3055}
+- {name: 西安, english: Xi'an, lat: 34.3416, lng: 108.9398}
+- {name: 北京, english: Beijing, lat: 39.9042, lng: 116.4074}
+- {name: 郑州, english: Zhengzhou, lat: 34.7466, lng: 113.6254}
+- {name: 广州, english: Guangzhou, lat: 23.1291, lng: 113.2644}
+- {name: 上海, english: Shanghai, lat: 31.2304, lng: 121.4737}
+- {name: 深圳, english: Shenzhen, lat: 22.5431, lng: 114.0579}
+- {name: 香港, english: Hong Kong, lat: 22.3193, lng: 114.1694}
+- {name: 澳门, english: Macao, lat: 22.1987, lng: 113.5439}
+- {name: 汕头, english: Shantou, lat: 23.3535, lng: 116.6820}
+- {name: 匹兹堡, english: Pittsburgh, lat: 40.4406, lng: -79.9959}
+- {name: 旧金山, english: San Francisco, lat: 37.7749, lng: -122.4194}
+- {name: 台北, english: Taipei, lat: 25.0330, lng: 121.5654}
+- {name: 东京, english: Tokyo, lat: 35.6762, lng: 139.6503}

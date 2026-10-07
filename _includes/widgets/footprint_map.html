@@ -1,0 +1,10 @@
+<section id="footprints" class="footprint-section" aria-labelledby="footprint-heading">
+ <div class="research-section-header"><div><p class="section-kicker">04 / Places &amp; perspectives</p><h2 id="footprint-heading">Across the <em>map.</em></h2></div><p class="section-intro">Cities, conversations, and perspectives.<br>足迹地图 · {{ site.data.footprints.size }} cities</p></div>
+ <div class="map-toolbar"><div class="map-regions" hidden><button type="button" data-map-region="all">全部标点</button><button type="button" data-map-region="asia">东亚</button><button type="button" data-map-region="america">北美</button></div><label for="footprint-city">定位城市 <select id="footprint-city"><option value="">选择城市</option>{% for city in site.data.footprints %}<option value="{{ forloop.index0 }}">{{ city.name }} · {{ city.english }}</option>{% endfor %}</select></label></div>
+ <div id="footprint-map" aria-label="城市足迹交互地图" role="region"></div><p class="map-help" aria-live="polite">点击标点查看城市，使用 + / − 缩放地图。</p>
+ <script id="footprint-data" type="application/json">{{ site.data.footprints | jsonify }}</script>
+ <noscript><p>启用 JavaScript 查看交互地图。{% for city in site.data.footprints %}{{ city.name }}{% unless forloop.last %}、{% endunless %}{% endfor %}</p></noscript>
+</section>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ '/assets/css/footprint-map.css' | relative_url }}">
+<script src="{{ '/assets/js/footprint-map.js' | relative_url }}" async></script>

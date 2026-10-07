@@ -83,16 +83,5 @@ awards:
   date: 2026
 # 可后续添加更多奖项
 
-footprints:
-- 兰州
-- 武汉
-- 西安
-- 北京
-- 郑州
-- 广州
-- 上海
-- 深圳
-- 香港
-- 澳门
 
 # 如果有publications、publications等section，可自行扩展（此模板中未提供，可在HTML中添加）

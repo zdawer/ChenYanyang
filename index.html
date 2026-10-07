@@ -72,20 +72,4 @@ navbar_title: Home
 </div>
 {% endif %}
 
-{% if site.data.profile.footprints %}
-<div class="my-3 p-0 bg-white shadow-sm rounded-sm">
-    <h6 class="border-bottom border-gray p-3 mb-0">
-        <i class="fas fa-route"></i> Footprints
-    </h6>
-    <div class="p-4">
-        <p class="text-muted mb-3" style="font-size: 0.95rem;">
-            Cities and regions I have visited along the way, each leaving behind a different memory, conversation, and perspective.
-        </p>
-        <div class="d-flex flex-wrap">
-            {% for city in site.data.profile.footprints %}
-            <span class="badge badge-light border mr-2 mb-2 px-3 py-2" style="font-size: 0.95rem;">{{ city }}</span>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-{% endif %}
+{% include widgets/footprint_map.html %}
