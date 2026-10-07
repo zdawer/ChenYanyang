@@ -10,9 +10,9 @@ cover_note: "AI-generated concept illustration; details are schematic."
 cover_caption: "Simulated research concept"
 cover_alt: "Simulated concept of candidate selection, fresh evaluation and block-level statistical inference."
 badge: "AAAI 2027"
-status_label: "Under review"
+status_label: "Passed Phase 1 · Under review"
 pub: "AAAI 2027"
-pub_post: " · Under review · First author: Yanyang Chen"
+pub_post: " · Passed Phase 1 of review · First author: Yanyang Chen"
 abstract: >-
   A procedure-level audit of continual replay selection that repeats the full
   stochastic selector and evaluates frozen decisions on disjoint fresh rerolls.

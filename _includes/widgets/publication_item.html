@@ -17,7 +17,7 @@
   <div class="publication-details">
     <div class="publication-eyebrow">
       <span class="publication-venue">{{ item.badge | default: item.pub }}</span>
-      {% if item.status_label %}<span class="publication-status {% if item.status_label == 'Under review' %}status-review{% endif %}">{{ item.status_label }}</span>{% endif %}
+      {% if item.status_label %}<span class="publication-status {% if item.status_label contains 'Under review' %}status-review{% endif %}">{{ item.status_label }}</span>{% endif %}
     </div>
     <h3 class="publication-title">{{ item.title }}</h3>
     {% if item.authors and item.authors.size > 0 %}<p class="publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>{% endif %}
