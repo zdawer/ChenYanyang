@@ -1,5 +1,5 @@
 {% assign item = include.item %}
-<article class="publication-entry {% unless include.hide_bottom_border %}border-bottom border-gray{% endunless %}">
+<article class="publication-entry {% unless item.cover %}publication-text-only{% endunless %} {% unless include.hide_bottom_border %}border-bottom border-gray{% endunless %}">
   {% if item.cover %}
   {% assign figure_full = item.cover_full | default: item.cover %}
   {% assign figure_caption = item.cover_caption | default: '' %}
