@@ -30,3 +30,5 @@ a{color:var(--blue)}a:hover{color:#e8f7f2;text-decoration:none}a:focus-visible,b
 .publication-text-only .publication-title{max-width:78ch}
 .award-medal{display:inline-flex;align-items:center;gap:7px;font-size:10px;letter-spacing:.8px;text-transform:uppercase;padding:4px 9px;margin-bottom:9px;border:1px solid #53666b;border-radius:3px;background:#b7c8cf12;color:#c4d4df}
 .background-entry h4>a{color:inherit}.background-entry h4>a:hover{color:var(--accent)}
+
+.award-certificate{display:block;max-width:340px;margin-top:14px}.award-certificate img{display:block;width:100%;height:auto;border-radius:4px;border:1px solid var(--rule)}.award-certificate span{display:block;font-size:11px;margin-top:5px;color:var(--muted)}

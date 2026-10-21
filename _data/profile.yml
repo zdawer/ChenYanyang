@@ -40,14 +40,33 @@ experience:
   position: Research Participant (参与国自然面上项目研究)
 
 - name: Guangdong Provincial Climbing Plan (攀登计划)
-  position: Project Lead · Proposed for approval (拟立项)
-  date: Jan. 2026
+  position: Approved · Project Lead (已立项，项目负责人)
+  date: "2026"
+
+- name: Local Government–University Collaboration
+  position: Led collaboration between a local government and Guangzhou University (牵头地方政府与广州大学校地合作)
 
 awards:
+- name: National First Prize — 妈妈杯
+  details: 全国一等奖
+  date: "2026"
+
+- name: MCM/ICM Finalist (F Award)
+  details: 美国大学生数学建模竞赛 F 奖
+  date: "2026"
+
 - name: National Second Prize, China Undergraduate Mathematical Contest in Modeling (全国大学生数学建模竞赛国家二等奖)
 
 - name: Kaggle Silver Medal — Kaggriculture
   medal: silver
-  details: "Rank 258 / 10,148"
+  details: "Rank 258 / 10,148 teams"
   url: https://www.kaggle.com/competitions/kaggriculture
-  date: "2026"
+  date: "Oct. 14, 2026"
+  certificate: /assets/images/awards/kaggriculture-silver-2026.png
+
+service_and_outreach:
+- name: Botanical Society of China
+  details: Member (中国植物学会会员)
+
+- name: 10+ Official Media Reports
+  details: Featured in Hubei Daily and other official media (湖北日报等官方媒体报道 10+ 次)
