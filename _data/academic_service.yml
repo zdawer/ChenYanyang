@@ -1,0 +1,50 @@
+reviewing:
+  title: Invited conference reviewer
+  subtitle: 多次受邀担任会议审稿人
+  conferences:
+    - name: ICLR
+      years: "2026 · 2027"
+      logo: /assets/images/service/iclr.svg
+      width: 282
+      height: 84
+      url: https://iclr.cc/
+    - name: AAAI
+      years: "2027"
+      logo: /assets/images/service/aaai-white.png
+      width: 1000
+      height: 235
+      theme: dark
+      url: https://aaai.org/
+    - name: ICRA
+      years: "2027"
+      logo: /assets/images/service/icra-2027.jpg
+      width: 2560
+      height: 537
+      url: https://2027.ieee-icra.org/
+    - name: IROS
+      years: "2026"
+      logo: /assets/images/badges/iros-2026.png
+      width: 300
+      height: 195
+      url: https://2026.ieee-iros.org/
+
+membership:
+  category: Professional membership
+  name: Botanical Society of China
+  details: Member · 中国植物学会会员
+  logo: /assets/images/service/botanical-society.png
+  width: 584
+  height: 168
+  theme: botanical
+  url: http://www.botany.org.cn/
+
+media:
+  category: Public engagement
+  name: Official media coverage
+  metric: "10+"
+  metric_label: reports
+  details: Including Hubei Daily · 湖北日报等官方媒体报道
+  logo: /assets/images/service/hubei-daily.svg
+  width: 118
+  height: 67
+  url: https://yx.hubeidaily.net/

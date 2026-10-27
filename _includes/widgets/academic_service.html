@@ -1,0 +1,53 @@
+<section id="academic-service" class="academic-service" aria-labelledby="academic-service-heading">
+  <header class="service-heading">
+    <h3 id="academic-service-heading">Academic service <em>&amp; outreach.</em></h3>
+    <a class="service-personal-link" href="{{ '/showcase' | relative_url }}">Personal collection <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <div class="service-reviewing">
+    <div class="service-group-heading">
+      <h4>{{ site.data.academic_service.reviewing.title }}</h4>
+      <p lang="zh">{{ site.data.academic_service.reviewing.subtitle }}</p>
+    </div>
+    <ul class="service-conferences" aria-label="Conference reviewer invitations">
+      {% for conference in site.data.academic_service.reviewing.conferences %}
+      <li>
+        <a class="service-venue" href="{{ conference.url }}" target="_blank" rel="noopener" aria-label="{{ conference.name }} {{ conference.years }} — conference website">
+          <span class="service-logo-panel{% if conference.theme %} service-logo-panel--{{ conference.theme }}{% endif %}">
+            <img src="{{ conference.logo | relative_url }}" width="{{ conference.width }}" height="{{ conference.height }}" alt="{{ conference.name }} logo" loading="lazy" decoding="async">
+          </span>
+          <span class="service-venue-caption"><strong>{{ conference.name }}</strong><span class="service-years">{{ conference.years }}</span><span class="service-arrow" aria-hidden="true">↗</span></span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="service-community">
+    <article class="service-affiliation">
+      <h4 class="service-category">{{ site.data.academic_service.membership.category }}</h4>
+      <div class="service-affiliation-body">
+        <a class="service-logo-panel service-logo-panel--{{ site.data.academic_service.membership.theme }}" href="{{ site.data.academic_service.membership.url }}" target="_blank" rel="noopener" aria-label="Botanical Society of China website">
+          <img src="{{ site.data.academic_service.membership.logo | relative_url }}" width="{{ site.data.academic_service.membership.width }}" height="{{ site.data.academic_service.membership.height }}" alt="Botanical Society of China logo" loading="lazy" decoding="async">
+        </a>
+        <div class="service-affiliation-copy">
+          <h5>{{ site.data.academic_service.membership.name }}</h5>
+          <p>{{ site.data.academic_service.membership.details }}</p>
+        </div>
+      </div>
+    </article>
+    <article class="service-affiliation service-media">
+      <h4 class="service-category">{{ site.data.academic_service.media.category }}</h4>
+      <div class="service-affiliation-body">
+        <a class="service-logo-panel" href="{{ site.data.academic_service.media.url }}" target="_blank" rel="noopener" aria-label="Hubei Daily website">
+          <img src="{{ site.data.academic_service.media.logo | relative_url }}" width="{{ site.data.academic_service.media.width }}" height="{{ site.data.academic_service.media.height }}" alt="Hubei Daily logo" loading="lazy" decoding="async">
+        </a>
+        <div class="service-affiliation-copy">
+          <h5><span class="service-metric">{{ site.data.academic_service.media.metric }}</span> <span class="service-metric-label">{{ site.data.academic_service.media.metric_label }}</span></h5>
+          <p class="service-media-title">{{ site.data.academic_service.media.name }}</p>
+          <p>{{ site.data.academic_service.media.details }}</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

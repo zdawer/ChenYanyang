@@ -63,14 +63,3 @@ awards:
   url: https://www.kaggle.com/competitions/kaggriculture
   date: "Oct. 14, 2026"
   certificate: /assets/images/awards/kaggriculture-silver-2026.png
-
-service_and_outreach:
-- name: Invited Conference Reviewer (多次受邀担任会议审稿人)
-  details: ICLR 2027 · AAAI 2027 · ICRA 2027 · ICLR 2026 · IROS 2026
-
-- name: Botanical Society of China
-  details: Member (中国植物学会会员)
-
-- name: 10+ Official Media Reports
-  details: Featured in Hubei Daily and other official media (湖北日报等官方媒体报道 10+ 次)
-

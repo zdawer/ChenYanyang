@@ -34,3 +34,42 @@ a{color:var(--blue)}a:hover{color:#e8f7f2;text-decoration:none}a:focus-visible,b
 .award-certificate{display:block;max-width:340px;margin-top:14px}.award-certificate img{display:block;width:100%;height:auto;border-radius:4px;border:1px solid var(--rule)}.award-certificate span{display:block;font-size:11px;margin-top:5px;color:var(--muted)}
 
 .background-column{display:flex;flex-direction:column;gap:32px;min-width:0}.background-column .background-block:last-child .background-entry:last-child{margin-bottom:0}@media(max-width:767px){.background-column{gap:20px}}
+
+/* Academic service: original institutional marks, quiet rules, generous measure. */
+.academic-service{margin-top:52px;padding-top:36px;border-top:1px solid var(--rule)}
+.service-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:30px}
+.service-heading h3{font-size:32px;font-weight:400;line-height:1.25;letter-spacing:-.9px;margin:0;color:var(--ink)}
+.service-heading h3 em{font-family:var(--serif);font-weight:400;color:#d4dbd4}
+.service-personal-link{flex-shrink:0;font-size:11px;color:#91aaa3}
+.service-personal-link span{margin-left:5px}
+.service-group-heading{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:20px}
+.service-group-heading h4{font-size:15px;font-weight:400;color:#dbe6df;margin:0}
+.service-group-heading p{font-size:12px;color:#91a39c;margin:0}
+.service-conferences{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;list-style:none;margin:0;padding:0}
+.service-conferences>li{min-width:0}
+.service-venue{display:block;color:var(--ink);text-decoration:none}
+.service-logo-panel{display:flex;align-items:center;justify-content:center;height:94px;padding:16px 20px;border:1px solid #dae2dd;border-radius:5px;background:#fff;overflow:hidden}
+.service-logo-panel img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;filter:none}
+.service-logo-panel--dark{background:#1a282d;border-color:#35474b}
+.service-logo-panel--botanical{background:#173e36;border-color:#305b50}
+.service-venue-caption{display:flex;align-items:baseline;gap:12px;margin-top:13px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.service-venue-caption strong{font-size:16px;font-weight:400;letter-spacing:.15px}
+.service-years{font-family:monospace;font-size:11px;letter-spacing:.1px;color:#9db7ac}
+.service-arrow{margin-left:auto;font-size:14px;color:#7b948b;transition:color .2s}
+.service-venue:hover .service-arrow,.service-venue:hover strong{color:var(--accent)}
+.service-community{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;margin-top:32px}
+.service-affiliation{min-width:0}
+.service-affiliation+.service-affiliation{border-left:1px solid var(--rule);padding-left:40px}
+.service-category{font-family:monospace;font-weight:400;font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:#8fa99f;margin:0 0 18px}
+.service-affiliation-body{display:grid;grid-template-columns:154px minmax(0,1fr);gap:20px;align-items:center}
+.service-affiliation .service-logo-panel{height:90px;padding:14px}
+.service-affiliation-copy{min-width:0}
+.service-affiliation-copy h5{font-size:16px;font-weight:400;line-height:1.45;color:#e0e7e2;margin:0 0 7px}
+.service-affiliation-copy p{font-size:12px;line-height:1.7;color:#a1b2a9;margin:0}
+.service-metric{font-family:var(--serif);font-size:34px;line-height:1;color:var(--accent);letter-spacing:-1px}
+.service-metric-label{font-size:12px;color:#c7d5cd;margin-left:4px}
+.service-affiliation-copy .service-media-title{font-size:13px;color:#d6e0da;margin-bottom:2px}
+@media(max-width:991px){.service-conferences{gap:20px}.service-logo-panel{padding:14px;height:86px}.service-community{gap:26px}.service-affiliation+.service-affiliation{padding-left:26px}.service-affiliation-body{grid-template-columns:122px minmax(0,1fr);gap:16px}.service-affiliation-copy h5{font-size:15px}.service-venue-caption{gap:8px}}
+@media(max-width:767px){.academic-service{margin-top:38px;padding-top:28px}.service-heading{display:block;margin-bottom:26px}.service-heading h3{font-size:28px;letter-spacing:-.7px}.service-personal-link{display:inline-block;margin-top:12px}.service-group-heading{display:block;margin-bottom:18px}.service-group-heading p{margin-top:5px}.service-conferences{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px}.service-logo-panel{height:86px;padding:12px}.service-venue-caption{padding-bottom:12px;margin-top:10px;gap:7px}.service-venue-caption strong{font-size:15px}.service-years{font-size:10px}.service-community{grid-template-columns:1fr;gap:25px;margin-top:30px}.service-affiliation+.service-affiliation{border-left:0;border-top:1px solid var(--rule);padding:24px 0 0}.service-affiliation-body{grid-template-columns:130px minmax(0,1fr);gap:18px}.service-affiliation .service-logo-panel{height:84px;padding:12px}.service-category{margin-bottom:14px}}
+@media(max-width:359px){.service-affiliation-body{grid-template-columns:108px minmax(0,1fr);gap:14px}.service-venue-caption{flex-wrap:wrap;gap:3px 7px}.service-years{order:3;flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.service-arrow{transition:none}}
