@@ -1,6 +1,6 @@
 ---
 title: >-
-  Guangdong Provincial "Climbing Plan" project approved; serving as project lead.
+  广东省科技创新战略专项资金项目（攀登计划）已立项，担任项目负责人。
 date: 2026-01-01 00:01:00 +0800
 display_date: "2026"
 ---
